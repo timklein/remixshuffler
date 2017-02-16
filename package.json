@@ -1,0 +1,14 @@
+{
+  "name": "remixshuffler",
+  "version": "1.0.0",
+  "description": "Shuffle Playlist of Songs from http://themagicipod.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

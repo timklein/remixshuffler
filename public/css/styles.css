@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+	margin-top: 25%;
+}
+
+audio {
+	width: 50%;
+	transition:all 0.2s ease-in-out;
+	box-shadow: 15px 15px 20px 0px #777777;
+	border-radius:7px 7px 7px 7px ;
+}
+
+audio:hover, audio:focus, audio:active {
+	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	transform: scale(1.02);
+}
