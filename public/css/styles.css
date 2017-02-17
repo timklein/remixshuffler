@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	margin-top: 15em;
+	margin-top: 10em;
 }
 
 audio {
@@ -13,4 +13,22 @@ audio {
 audio:hover, audio:focus, audio:active {
 	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
 	transform: scale(1.02);
+}
+
+.identify {
+	background-color: white;
+	width: 80%;
+	margin: 3% auto;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 2% 0;
+}
+
+.leftImg, .rightImg {
+	display: inline;
+	padding: 2%;
+}
+
+.leftImg img, .rightImg img {
+	width: 45%;
 }

@@ -25,23 +25,33 @@ function start() {
 };
 
 function run(link, player){
-        player.src = link;
-        audio[0].load();
-        audio[0].play();
+	
+	let base = link.split('-')[0].split('/')[3];
+	let mix = link.split('-')[1].split('.')[0];
+
+	let leftImg = 'http://themagicipod.com/' + mix + '.png';
+	let rightImg = 'http://themagicipod.com/' + base + '.png';
+
+	$('div.leftImg').html('<img src="' + leftImg + '">');
+	$('div.rightImg').html('<img src="' + rightImg + '">');
+
+	player.src = link;
+	audio[0].load();
+	audio[0].play();
 };
 
 function shuffle(array) {
-  let currentIndex = array.length, temporaryValue, randomIndex ;
+	let currentIndex = array.length, temporaryValue, randomIndex ;
 
-  while (0 !== currentIndex) {
+	while (0 !== currentIndex) {
 
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
 
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
 
-  return array;
+	return array;
 };
