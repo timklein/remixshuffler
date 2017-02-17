@@ -5,6 +5,7 @@ body {
 
 audio {
 	width: 50%;
+	margin-top: 100px;
 	transition:all 0.2s ease-in-out;
 	box-shadow: 15px 15px 20px 0px #777777;
 	border-radius:7px 7px 7px 7px ;
