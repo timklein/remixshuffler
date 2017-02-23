@@ -32,8 +32,12 @@ function run(link, player){
 	let leftImg = 'http://themagicipod.com/' + mix + '.png';
 	let rightImg = 'http://themagicipod.com/' + base + '.png';
 
-	$('div.leftImg').html('<img src="' + leftImg + '">');
-	$('div.rightImg').html('<img src="' + rightImg + '">');
+	$('.leftImg').html('<img src="' + leftImg + '">');
+	$('.rightImg').html('<img src="' + rightImg + '">');
+	
+	// setTimeout(function () {
+	// 	$('.leftImg').css({height: $('.size').height()});
+	// }, 2000);
 
 	player.src = link;
 	audio[0].load();
