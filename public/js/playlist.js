@@ -35,10 +35,6 @@ function run(link, player){
 	$('.leftImg').html('<img src="' + leftImg + '">');
 	$('.rightImg').html('<img src="' + rightImg + '">');
 	
-	// setTimeout(function () {
-	// 	$('.leftImg').css({height: $('.size').height()});
-	// }, 2000);
-
 	player.src = link;
 	audio[0].load();
 	audio[0].play();

@@ -1,5 +1,5 @@
 body {
-	margin-top: 10em;
+	margin: 10em auto;
 	text-align: center;
 }
 
@@ -19,9 +19,10 @@ audio:hover, audio:focus, audio:active {
 	background-color: white;
 	border-radius: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin: 5% auto;
+	margin: 0 auto 5%;
 	padding: 3%;
 	width: 80%;
+	max-width: 1200px;
 }
 
 .foot {
@@ -38,82 +39,23 @@ audio:hover, audio:focus, audio:active {
 
 .leftImg img, .rightImg img {
 	width: 45%;
+	height: 90%
 }
 
-/*@media only screen
-	and (min-device-width: 320px)
-	and (max-device-width: 736px)
-	and (orientation: portrait) {
-
-	audio {
-		box-shadow: 0px 0px 0px 0px;
-		height: 100px;
-	}
-
-	audio:hover, audio:focus, audio:active {
-		box-shadow: 0px 0px 0px 0px;
-		transform: scale(1);
-	}
-}
-
-@media only screen
-	and (min-device-width: 320px)
-	and (max-device-width: 736px)
-	and (orientation: landscape) {
-
-	audio {
-		box-shadow: 0px 0px 0px 0px;
-		height: 62px;	
-	}
-
-	audio:hover, audio:focus, audio:active {
-		box-shadow: 0px 0px 0px 0px;
-		transform: scale(1);
-	}
-}
-
-@media only screen 
-	and (min-device-width: 768px) 
-	and (max-device-width: 1024px) 
-	and (orientation: portrait) {
-
-	audio {
-		box-shadow: 0px 0px 0px 0px;
-		height: 100px;
-	}
-
-	audio:hover, audio:focus, audio:active {
-		box-shadow: 0px 0px 0px 0px;
-		transform: scale(1);
-	}
-}
-
-@media only screen 
-	and (min-device-width: 768px) 
-	and (max-device-width: 1024px) 
-	and (orientation: landscape) {
-
-	audio {
-		box-shadow: 0px 0px 0px 0px;
-		height: 62px;
-	}
-
-	audio:hover, audio:focus, audio:active {
-		box-shadow: 0px 0px 0px 0px;
-		transform: scale(1);
-	}
-}*/
-
-@media screen and (max-height: 750px){
+@media screen and (max-height: 768px){
 
 	body {
 		margin-top: 2em;
 	}
-}
-
-/*@media screen and (max-height: 540px){
 
 	.identify {
-		display: none;
+		padding: 2%;
 	}
-}*/
+}
+
+@media screen and (max-height: 525px){
+
+	.foot {
+		position: initial;
+	}
+}
